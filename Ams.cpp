@@ -15,7 +15,7 @@ void revArray(int size, int arr[]){
         n--;
     }
 }
-
+//* checking new branch**//
 int main(){
    int arr[] = {2,4,6,8,9,10,16,18,20,25,28,30};
    int size = sizeof(arr)/sizeof(arr[0]);

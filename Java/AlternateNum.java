@@ -8,6 +8,13 @@ public class AlternateNum {
         for (int i = 0; i < numbers.length; i = i + 2) {
             System.out.print(numbers[i] + " ");
         }
+
+        //** Modulo approach **//
+        /*for (int i = 0; i < arr.length; i++){
+            if (i % 2 == 0) {
+                // If the index is even, print the element at that index
+                System.out.println(numbers[i] + " ");
+            }*/
     }
 }
  

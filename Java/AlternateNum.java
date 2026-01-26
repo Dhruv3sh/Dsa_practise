@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 public class AlternateNum {
     public static void main(String[] args) {
         int[] numbers = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
@@ -15,6 +18,11 @@ public class AlternateNum {
                 // If the index is even, print the element at that index
                 System.out.println(numbers[i] + " ");
             }*/
+        //**java stream approach */
+        /*IntStream.range(0, numbers.length) 
+                 .filter(i -> i % 2 == 0)   
+                 .map(i -> numbers[i])
+                 .forEach(e -> System.out.print(e + " "));*/
     }
 }
  

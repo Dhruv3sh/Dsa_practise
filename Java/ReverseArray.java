@@ -1,4 +1,8 @@
-﻿public static void Reverse(int[] arr) {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public static void Reverse(int[] arr) {
     int start = 0;
     int end = arr.length - 1;
 
@@ -21,4 +25,8 @@ public class ReverseArray {
 
         // printing the reversed result
         System.out.println("Reversed Array: " + Arrays.toString(myArray));
+
+        //** java collection approach */
+        //List<Integer> list = Arrays.asList(arr);
+        //Collections.reverse(list);
     }

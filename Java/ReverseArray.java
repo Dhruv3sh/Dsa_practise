@@ -1,8 +1,10 @@
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+// import java.util.Collections;
+// import java.util.List;
 
-public static void Reverse(int[] arr) {
+
+public class ReverseArray {
+    public static void Reverse(int[] arr) {
     int start = 0;
     int end = arr.length - 1;
 
@@ -17,7 +19,6 @@ public static void Reverse(int[] arr) {
         end--;
     }
 }
-public class ReverseArray {
     public static void main(String[] args) {
         
         int[] myArray = {10, 20, 30, 40, 50};
@@ -30,3 +31,4 @@ public class ReverseArray {
         //List<Integer> list = Arrays.asList(arr);
         //Collections.reverse(list);
     }
+}

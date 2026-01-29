@@ -1,6 +1,6 @@
 // import java.util.Arrays;
-// import java.util.Collections;
-// import java.util.List;
+import java.util.Collections;
+import java.util.List;
 
 public class ReverseArray {
 
@@ -46,9 +46,9 @@ public class ReverseArray {
 
         // ** java collection approach */
 
-        // List<Integer> list = Arrays.asList(arr);
-        // Collections.reverse(list);
-        // System.out.print(List)
+         List<Integer> list = Arrays.asList(arr);
+         Collections.reverse(list);
+         System.out.print(List)
 
 
         //* */

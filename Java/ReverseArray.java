@@ -1,10 +1,10 @@
-// import java.util.Arrays;
+import java.util.*;
 import java.util.Collections;
 import java.util.List;
 
 public class ReverseArray {
 
-    public static void reverseArrayRecursively(int[] arr, int start, int end) {
+    public static void reverseArrayRecursively(Integer[] arr, int start, int end) {
     if (start >= end) {
         return;
     }
@@ -19,7 +19,7 @@ public class ReverseArray {
     public static void main(String[] args) {
         
 
-        int[] arr = { 10, 20, 30, 40, 50 };
+        Integer[] arr = { 10, 20, 30, 40, 50 };
 
         //*Recursive approach */
         reverseArrayRecursively(arr, 0, arr.length-1);
@@ -28,7 +28,7 @@ public class ReverseArray {
         }
 
         //for (int i = arr.length - 1; i >= 0; i--) {
-         //   System.out.print(arr[i] + " ");
+        //   System.out.print(arr[i] + " ");
         //}
 
         //*Two pointer approach */
@@ -52,7 +52,7 @@ public class ReverseArray {
 
          List<Integer> list = Arrays.asList(arr);
          Collections.reverse(list);
-         System.out.print(List)
+         System.out.print(list);
 
 
         //* */

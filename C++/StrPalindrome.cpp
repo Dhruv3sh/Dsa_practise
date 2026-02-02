@@ -11,8 +11,7 @@ int solve(int left, int right, const string &s) {
     if (s[left] == s[right]) {
         return solve(left + 1, right - 1, s);
     }
-
-    // Try inserting on either side
+    
     int insertLeft = solve(left + 1, right, s);
     int insertRight = solve(left, right - 1, s);
 

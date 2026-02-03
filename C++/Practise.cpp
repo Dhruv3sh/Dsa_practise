@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//reverse bubble sort
 void Sorting(int arr[], int n){
     for(int i=0; i<n; i++){
         for(int j=n-1; j>i; j--)
@@ -8,6 +9,16 @@ void Sorting(int arr[], int n){
             swap(arr[j],arr[j-1]);
         }
     }
+}
+
+void Searching(int arr[], int n, int target){
+    for(int i=0; i<n; i++){
+        if(arr[i] == target){
+            cout<< "taget index : "<<i<<endl;
+            return;
+        };
+    }
+    cout<<"Traget not found"<<endl;
 }
 
 int main(){
@@ -20,7 +31,7 @@ int main(){
     };
 
     Sorting(arr,n);
-    // Searching(arr,n,5);
+    Searching(arr,n,4);
 
     for(int i=0; i<n; i++){
         cout<< arr[i] << " ";

@@ -21,6 +21,7 @@ void Searching(int arr[], int n, int target){
     cout<<"Traget not found"<<endl;
 }
 
+//** Sorting and Searching in an array **//
 int main(){
     int n;
     cin>>n;

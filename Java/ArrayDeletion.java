@@ -14,7 +14,5 @@ class ArrayDeletion {
             }
             System.out.println();
         }
-
-        
     }
 }

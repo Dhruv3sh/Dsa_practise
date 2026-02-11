@@ -46,11 +46,5 @@ class StackImplementation{
         s.push(30);
         System.out.println(s.pop() + " popped from stack");
         s.print();
-
-
-       
-
-
-
     }
 }

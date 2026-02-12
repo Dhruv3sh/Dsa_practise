@@ -25,6 +25,21 @@ class MyStack {
         top = temp;
     }
 
+    public int pop() {
+  
+    if (top == null) {
+        System.out.println("Stack Underflow");
+        return -1;
+    }
+
+    Node temp = top;
+    top = top.next;
+    int val = temp.data;
+
+    temp = null; 
+    return val;
+}
+
     void printStack(){
         if(top == null){
             System.out.println("Stack is empty");
@@ -33,9 +48,10 @@ class MyStack {
 
         Node temp = top;
         while (temp != null) {
-            System.out.println(temp.data);
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
     
 }
@@ -48,6 +64,9 @@ class StackWithLl {
         obj.push(12);
         obj.push(13);
         obj.printStack();
+        obj.pop();
+        obj.printStack();
+
 
     }
 }

@@ -18,13 +18,14 @@ class MyStack {
         // initially stack is empty
         top = null;
     }
-  
+    // pushes the element to the top
     void push(int x) {
         Node temp = new Node(x);
         temp.next = top;
         top = temp;
     }
 
+    // Removes top elemnt
     public int pop() {
 
         if (top == null) {
@@ -39,7 +40,7 @@ class MyStack {
         temp = null;
         return val;
     }
-
+    //prints the top element
     void peek() {
 
         if (top == null) {

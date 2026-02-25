@@ -18,6 +18,7 @@ class MyStack {
         // initially stack is empty
         top = null;
     }
+
     // pushes the element to the top
     void push(int x) {
         Node temp = new Node(x);
@@ -40,6 +41,7 @@ class MyStack {
         temp = null;
         return val;
     }
+
     //prints the top element
     void peek() {
 
@@ -49,7 +51,8 @@ class MyStack {
 
         System.out.println("top element is : " + top.data);
     }
-
+    
+    //Prints the whole stack
     void printStack() {
         if (top == null) {
             System.out.println("Stack is empty");

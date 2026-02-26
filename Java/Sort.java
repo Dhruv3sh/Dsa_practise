@@ -1,7 +1,5 @@
-public class Sort {
-    public static void main(String[] args) {
-        int[] arr = { 5, 3, 8, 2 };
-
+class Sort {
+    void BubbleSort() {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -11,8 +9,14 @@ public class Sort {
                 }
             }
         }
+    }
 
-        for(int i=0; i<arr.length; i++){
+    public static void main(String[] args) {
+        int[] arr = { 5, 3, 8, 2 };
+
+        BubbleSort(int arr);
+
+        for (int i = 0; i < arr.length; i++) {
             System.out.print("Bubble sort : " + arr[i] + " ");
         }
 

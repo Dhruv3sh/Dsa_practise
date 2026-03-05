@@ -5,7 +5,6 @@ public class RotateArray {
         int k = 2; //point to rotate array
 
         for(int i=0;i<k;i++){
-
             int last = arr[arr.length-1];
 
             for(int j=arr.length-1;j>0;j--){

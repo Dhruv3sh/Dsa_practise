@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+    "label": "Run C++",
+    "type": "shell",
+    "command": "cmd",
+    "args": [
+        "/d",
+        "/c",
+        "g++ -std=c++17 \"${file}\" -o \"${fileBasenameNoExtension}\" && \"${fileBasenameNoExtension}\" < input.txt > output.txt && python complexity.py \"${file}\""
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    },
+    "problemMatcher": []
+},
+{
+      "label": "Run C",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/d",
+        "/c",
+        "gcc -std=c17 \"${file}\" -o \"${fileBasenameNoExtension}\" && \"${fileBasenameNoExtension}\" < input.txt > output.txt && python complexity.py \"${file}\""
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Java",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/d",
+        "/c",
+        "javac \"${file}\" -d \"${workspaceFolder}\\Java\" && cd /d \"${workspaceFolder}\" && java -cp \"${workspaceFolder}\\Java\" \"${fileBasenameNoExtension}\" < input.txt > output.txt&& python complexity.py \"${file}\""
+      ],
+      "group": "build"
+    }
+  ]
+}
